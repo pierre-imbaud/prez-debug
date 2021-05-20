@@ -44,6 +44,18 @@ qui ne sont pas totalement familiers de l'écosystème python.
 
 Les "nouveautés" que j'introduis sont ipdb, breakpoint(), et pdb++
 
+Ça marche pas!
+==============
+Finalement, j'ai cru trouver la solution, mais j'ai expérimenté des
+tas de problèmes non élucidés: Je n'ai pas, à quelques heures de la
+démo, un ensemble de solus convaincant.
+
+- bug pdb: Sur un projet que je pensais en béton, l'introduction de
+  set_trace() dans le code testé induit des dysfonctionnement de pdb:
+  entre autres des strings multilines scannées comme du texte.
+- la commande ``quit`` marche bien avec pdb, pas avec pdbpp.
+- sous pdb: des dysfonctionnements d'affichage.
+
 Références
 ==========
 
@@ -53,6 +65,11 @@ Références
   (PyCon AU 2019)` <https://www.youtube.com/watch?v=HHrVBKZLolg>`_ :
 
 - https://testdriven.io/test-driven-development/
+- https://ipython.org/
+- https://docs.python.org/3/library/pdb.html
+- https://pypi.org/project/pdbpp/
+
+Projet utilisé pour les démo: https://github.com/rec/stroll
 
 .. [1] Oui, c'était le bon temps! vivement qu'il revienne.
 
